@@ -1,7 +1,11 @@
 require "sinatra"
 require "sinatra/reloader"
 get("/") do
-  "Hello World"
+  '<h1>Dice Roll</h1>
+  <a href="/dice/2/6">Roll two 6-sided dice</a>
+  <a href="/dice/2/10">Roll two 10-sided dice</a>
+  <a href="/dice/2/8">Roll two 8-sided dice</a>
+'
 end
 get("/zebra") do
   "We must add a route for each path we want to support"
